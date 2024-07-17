@@ -8,15 +8,15 @@ import { SessaoService } from 'src/app/Serviços/sessao.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  
+
   loginForm!: FormGroup;
-  
-  
-  constructor(private fb: FormBuilder,private sessaoService: SessaoService) { }
+
+
+  constructor(private fb: FormBuilder, private sessaoService: SessaoService) { }
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
-      
+
       email: ['', [Validators.required, Validators.email]],
       password: [
         '',
@@ -26,6 +26,8 @@ export class LoginComponent implements OnInit {
         ]
       ]
     });
+
+
   }
 
   login() {
@@ -33,15 +35,22 @@ export class LoginComponent implements OnInit {
       return;
     }
 
-    this.sessaoService.setItem()
-    console.log('Formulário válido:', this.loginForm.value);
-  }
+    //let logado = this.sessaoService.getItem('logado');
+    //if (logado !== null) {
+    //logado = Boolean(logado);
+    //this.userId = Number(userId);
+    //}
+      
+      this.sessaoService.setItem('logado', true);
+      this.sessaoService.setItem('nivel', 1);
+      console.log('Formulário válido:', this.loginForm.value);
+    }
   
   get email(): FormControl {
-    return this.loginForm.get('email') as FormControl;
-  }
+      return this.loginForm.get('email') as FormControl;
+    }
   get password(): FormControl {
-    return this.loginForm.get('password') as FormControl;
+      return this.loginForm.get('password') as FormControl;
+    }
+
   }
-  
-}

@@ -23,6 +23,7 @@ import { CatServicosDirective } from './Diretivas/cat-servicos.directive';
 import { DetalheProdDirective } from './Diretivas/detalhe-prod.directive';
 import { RegistoComponent } from './Components/registo/registo.component';
 import { LoginComponent } from './Components/login/login.component';
+import { AdmHomeComponent } from './Components/adm-home/adm-home.component';
 
 
 
@@ -43,7 +44,8 @@ import { LoginComponent } from './Components/login/login.component';
     CatServicosDirective,
     DetalheProdDirective,
     RegistoComponent,
-    LoginComponent
+    LoginComponent,
+    AdmHomeComponent
   ],
   imports: [
     BrowserModule,

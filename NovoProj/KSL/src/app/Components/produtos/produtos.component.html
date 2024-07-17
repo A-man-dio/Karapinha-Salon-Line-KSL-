@@ -23,7 +23,7 @@
       </h6>
     </div>
 
-    <div class="card-footer d-grid gap-2">
+    <div *ngIf="logado" class="card-footer d-grid gap-2">
       <button routerLink="/addMarcacao" class="btn btn-outline-success" type="button">
         Adicionar serviço
       </button>
@@ -60,7 +60,7 @@
           </h5>
         </div>
 
-        <div class="card-footer text-muted d-grid gap-2">
+        <div *ngIf="logado" class="card-footer text-muted d-grid gap-2">
           <button routerLink="/addMarcacao" class="btn btn-outline-success" type="button">
             Adicionar serviço
           </button>
