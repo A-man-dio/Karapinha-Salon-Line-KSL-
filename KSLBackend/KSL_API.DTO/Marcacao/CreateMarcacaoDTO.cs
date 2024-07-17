@@ -6,5 +6,5 @@ public class CreateMarcacaoDTO
     public int IdCategoria { get; set; }
     public DateTime Data { get; set; }
     public TimeSpan Hora { get; set; }
-    //falta a lista de servicos marcados
+    public List<Models.ItenMarcacao> ServicosMarcados { get; set; }
 }

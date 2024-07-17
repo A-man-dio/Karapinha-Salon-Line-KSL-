@@ -68,6 +68,9 @@ namespace KSL_API.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdIten"));
 
+                    b.Property<int>("IdMarcacao")
+                        .HasColumnType("int");
+
                     b.Property<int>("IdProfissional")
                         .HasColumnType("int");
 
@@ -130,7 +133,6 @@ namespace KSL_API.DAL.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Foto")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("IdServico")

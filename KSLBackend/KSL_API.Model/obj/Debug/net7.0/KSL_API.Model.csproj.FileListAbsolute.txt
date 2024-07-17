@@ -40,3 +40,17 @@
 /Users/ernestoamandio/Desktop/KSLBackend/KSL_API.Model/obj/Debug/net7.0/KSL_API.Model.pdb
 /Users/ernestoamandio/Desktop/KSLBackend/KSL_API.Model/obj/Debug/net7.0/KSL_API.Model.genruntimeconfig.cache
 /Users/ernestoamandio/Desktop/KSLBackend/KSL_API.Model/obj/Debug/net7.0/ref/KSL_API.Model.dll
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/bin/Debug/net7.0/KSL_API.Model.deps.json
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/bin/Debug/net7.0/KSL_API.Model.runtimeconfig.json
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/bin/Debug/net7.0/KSL_API.Model.dll
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/bin/Debug/net7.0/KSL_API.Model.pdb
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/obj/Debug/net7.0/KSL_API.Model.csproj.AssemblyReference.cache
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/obj/Debug/net7.0/KSL_API.Model.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/obj/Debug/net7.0/KSL_API.Model.AssemblyInfoInputs.cache
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/obj/Debug/net7.0/KSL_API.Model.AssemblyInfo.cs
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/obj/Debug/net7.0/KSL_API.Model.csproj.CoreCompileInputs.cache
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/obj/Debug/net7.0/KSL_API.Model.dll
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/obj/Debug/net7.0/refint/KSL_API.Model.dll
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/obj/Debug/net7.0/KSL_API.Model.pdb
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/obj/Debug/net7.0/KSL_API.Model.genruntimeconfig.cache
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/obj/Debug/net7.0/ref/KSL_API.Model.dll

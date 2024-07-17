@@ -1,0 +1,107 @@
+<form [formGroup]="registerForm" (ngSubmit)="registar()">
+
+    <div class="row mb-3">
+        <div class="col">
+            <label for="nome" class="form-label">Insira o nome completo</label>
+            <input type="text" class="form-control" id="nome" formControlName="nome">
+
+            <div class="form-text text-danger" *ngIf="nome.errors?.['required'] && (nome.dirty || nome.touched)">
+                Insira um nome
+            </div>
+            <div class="form-text text-danger" *ngIf="nome.errors?.['minlength'] && (nome.dirty || nome.touched)">
+                Deve possuir ao menos duas letras
+            </div>
+            <div class="form-text text-danger" *ngIf="nome.errors?.['pattern'] && (nome.dirty || nome.touched)">
+                Deve possuir caracteres do alfabeto
+            </div>
+
+        </div>
+        <div class="col">
+            <label for="contacto" class="form-label">Insira um contacto</label>
+            <input type="number" class="form-control" id="contacto" formControlName="contacto">
+
+            <div class="form-text text-danger" *ngIf="contacto.errors?.['required'] && (contacto.dirty || contacto.touched)">
+                Insira um contacto
+            </div>
+            <div class="form-text text-danger" *ngIf="contacto.errors?.['min'] && (contacto.dirty || contacto.touched)">
+                Deve possuir ao menos 9 dígitos, e iniciar com '9'
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="username" class="form-label">Insira um nome de utilizador</label>
+        <input type="text" class="form-control" id="username" formControlName="username">
+
+        <div class="form-text text-danger" *ngIf="username.errors?.['required'] && (username.dirty || username.touched)">
+            Insira um username
+        </div>
+        <div class="form-text text-danger" *ngIf="username.errors?.['minlength'] && (username.dirty || username.touched)">
+            Pelo menos 2 caracteres
+        </div>
+        
+    </div>
+    <div class="mb-3">
+        <label for="BI" class="form-label">Insira o Nº do BI</label>
+        <input type="text" class="form-control" id="BI" formControlName="BI">
+
+        <div class="form-text text-danger" *ngIf="bi.errors?.['required'] && (bi.dirty || bi.touched)">
+            Insira um BI
+        </div>
+        <div class="form-text text-danger" *ngIf="bi.errors?.['minlength'] && (bi.dirty || bi.touched)">
+            Pelo menos 5 caracteres
+        </div>
+        
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Insira o email</label>
+        <input type="email" class="form-control" id="email" formControlName="email">
+
+        <div class="form-text text-danger" *ngIf="email.errors?.['required'] && (email.dirty || email.touched)">
+            Insira um email
+        </div>
+        <div class="form-text text-danger" *ngIf="email.errors?.['email'] && (email.dirty || email.touched)">
+            Email inválido
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col">
+            <label for="password" class="form-label">Insira a senha</label>
+            <input type="password" class="form-control" id="password" formControlName="password">
+
+            <div class="form-text text-danger" *ngIf="password.errors?.['required'] && (password.dirty || password.touched)">
+                Insira uma senha
+            </div>
+            <div class="form-text text-danger" *ngIf="password.errors?.['minlength'] && (password.dirty || password.touched)">
+                Senha deve conter ao menos 3 caracteres
+            </div>
+
+        </div>
+        <div class="col">
+            <label for="rpassword" class="form-label">Repita a senha</label>
+            <input type="password" class="form-control" id="rpassword" formControlName="rpassword">
+
+            <div class="form-text text-danger" *ngIf="invalidRPass">
+                As senhas não são idênticas
+            </div>
+            
+            <div class="form-text text-danger" *ngIf="rpassword.errors?.['required'] && (rpassword.dirty || rpassword.touched)">
+                Insira a senha novamente
+            </div>
+            <div class="form-text text-danger" *ngIf="rpassword.errors?.['minlength'] && (rpassword.dirty || rpassword.touched)">
+                Senha deve conter ao menos 3 caracteres
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <button type="submit" class="d-block mx-auto btn btn-outline-primary" [disabled]="registerForm.invalid">Registar</button>
+    </div>
+
+    <div class="mt-3 text-center">
+        <h5 class="text-sucess">Conta registada com sucesso</h5>
+    </div>
+</form>

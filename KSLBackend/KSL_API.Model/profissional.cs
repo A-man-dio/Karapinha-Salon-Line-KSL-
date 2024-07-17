@@ -17,19 +17,19 @@ namespace KSL_API.Models
         public string Nome { get; set; }
 
         [Required] 
-        [ForeignKey("Servico")] 
+        [ForeignKey("Servico")]
         public int IdServico { get; set; }
 
         [Required] 
         [EmailAddress] 
         public string Email { get; set; }
 
-        public string Foto { get; set; } // Caminho para a foto
+        public string? Foto { get; set; } // Caminho para a foto
 
         [Required] 
         [MaxLength(20)] 
         public string BI { get; set; }
-
+        
         [Required] 
         [Phone] 
         public string Telemovel { get; set; }

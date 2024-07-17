@@ -14,8 +14,6 @@ public static class ServicoMapper
             IdCategoria = servicoDTO.IdCategoria,
             Descricao = servicoDTO.Descricao,
             Preco = servicoDTO.Preco
-            
-            
         };
     }
 }

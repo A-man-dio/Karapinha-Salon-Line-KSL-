@@ -1,0 +1,11 @@
+<div class="my-container mx-auto border border-dark">
+    <div class="mb-4 my-shadow my-rounded-corner overflow-hidden" *ngFor="let produtosSugeridos of produtosSugeridos">
+        <div class="img-prod position-relative">
+            <button type="button" class="btn-outline-light btn-lg btn">Comprar agora</button>
+            <img src="../../../assets/{{produtosSugeridos.imagem}}" class="w-100" alt="">
+        </div>
+        <div class="lista-produtos py-5">
+            <app-produtos-sugeridos [categoria]="produtosSugeridos.categoria"></app-produtos-sugeridos>
+        </div>
+    </div>
+</div>

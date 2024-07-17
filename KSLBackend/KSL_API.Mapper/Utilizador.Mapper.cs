@@ -4,7 +4,7 @@ using KSL_API.Models;
 namespace KSL_API.Mapper;
 
 public static class Utilizador_Mapper
-{
+{   //mapear a models para oq vai ser apresentado
     public static Utilizador_DTO ToUtilizadorDto(this Utilizador UtilizadorModel )
     {
         return new Utilizador_DTO
@@ -18,7 +18,7 @@ public static class Utilizador_Mapper
             BI = UtilizadorModel.BI
         };
     }
-
+    //mapear oq foi criado para oq vai na bd
     public static Utilizador ToUtilizadorFromCreatedDTO(this CreateUtilizadorDTO UtilizadorDTO)
     {
         return new Utilizador

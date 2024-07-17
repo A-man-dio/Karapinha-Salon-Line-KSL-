@@ -1,3 +1,4 @@
+using System.Globalization;
 using KSL_API.DTO.Marcacao;
 using KSL_API.Models;
 
@@ -11,11 +12,10 @@ public static class MarcacaoMapper
         {
             Data = marcacaoDTO.Data,
             Estado = 0,
-            Hora = marcacaoDTO.Hora,
+            Hora =marcacaoDTO.Hora,
             IdCategoria = marcacaoDTO.IdCategoria,
-            IdUtilizador = marcacaoDTO.IdUtilizador
-            //ServicosMarcados = 
-
+            IdUtilizador = marcacaoDTO.IdUtilizador,
+            ServicosMarcados = marcacaoDTO.ServicosMarcados.Select(sm => sm).ToList()
         };
     }
 }

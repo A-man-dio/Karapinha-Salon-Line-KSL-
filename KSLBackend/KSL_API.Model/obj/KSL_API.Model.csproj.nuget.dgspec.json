@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ernestoamandio/Desktop/KSLBackend/KSL_API.Model/KSL_API.Model.csproj": {}
+    "/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/KSL_API.Model.csproj": {}
   },
   "projects": {
-    "/Users/ernestoamandio/Desktop/KSLBackend/KSL_API.Model/KSL_API.Model.csproj": {
+    "/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/KSL_API.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ernestoamandio/Desktop/KSLBackend/KSL_API.Model/KSL_API.Model.csproj",
+        "projectUniqueName": "/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/KSL_API.Model.csproj",
         "projectName": "KSL_API.Model",
-        "projectPath": "/Users/ernestoamandio/Desktop/KSLBackend/KSL_API.Model/KSL_API.Model.csproj",
+        "projectPath": "/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/KSL_API.Model.csproj",
         "packagesPath": "/Users/ernestoamandio/.nuget/packages/",
-        "outputPath": "/Users/ernestoamandio/Desktop/KSLBackend/KSL_API.Model/obj/",
+        "outputPath": "/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.Model/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ernestoamandio/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -53,6 +61,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.20, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

@@ -1,0 +1,100 @@
+<div class="grid-view" *ngIf="view === 'grid'">
+  <div class="card text-center">
+    <div class="card-header fw-bold fs-5 text-sucess">header</div>
+
+    <div class="overflow-hidden d-flex justify-content-center align-items-center">
+      <img src="../../../assets/food 0.jpeg" class="card-img-top" alt="" DetalheProd
+      [prodID] ="1"/>
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title title">Título</h5>
+      <h6 class="card-subtitle my-2 text-primary">12 produtos disponíveis</h6>
+      <p class="card-text description">Descrição</p>
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title text-success">
+        Preco final
+        <span class="text-primary"> -20% </span>
+      </h5>
+      <h6 class="card-subtitle text-danger text-decoration-line-through">
+        Preço original
+      </h6>
+    </div>
+
+    <div class="card-footer d-grid gap-2">
+      <button routerLink="/addMarcacao" class="btn btn-outline-success" type="button">
+        Adicionar serviço
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="list-view" *ngIf="view === 'list'">
+  <div class="card">
+    <div class="row">
+      <div class="col-md-4 overflow-hidden d-flex justify-content-center align-items-center">
+        <img  src="../../../assets/food 0.jpeg" class="card-img-top" alt="" DetalheProd
+        [prodID] ="1" />
+      </div>
+      <div class="col d-flex flex-column" style="padding-left: 0px">
+        <div class="card-header text-center">header</div>
+
+        <div class="card-body">
+          <h5 class="card-title title">Título</h5>
+          <p class="card-text description">Descrição</p>
+          <h6 class="card-subtitle mb-3 text-primary">
+            10 produtos disponíveis
+          </h6>
+        </div>
+
+        <div class="card-body">
+          <h4 class="card-title text-muted">Preçario</h4>
+          <h2 class="card-title text-success">
+            Preco final
+            <span class="text-primary"> -20% </span>
+          </h2>
+          <h5 class="card-subtitle text-danger text-decoration-line-through">
+            Preço original
+          </h5>
+        </div>
+
+        <div class="card-footer text-muted d-grid gap-2">
+          <button routerLink="/addMarcacao" class="btn btn-outline-success" type="button">
+            Adicionar serviço
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="marcar-view" *ngIf="view === 'marcar'">
+  <div class="card ">
+    <div class="row g-0">
+      <div class="col-4 overflow-hidden d-flex justify-content-center align-items-center">
+        <img src="../../../assets/food 0.jpeg" class="card-img-top" alt="" 
+        DetalheProd
+        [prodID] ="1"
+        />
+      </div>
+
+      <div class="col-8">
+        <div class="card-body">
+          <h5 class="card-title title">Título</h5>
+          <h6 class="card-subtitle my-2 text-primary">Profissional</h6>
+          <p class="card-text description">Descrição</p>
+          <p class="card-text description">Data:</p>
+          <h6 class="card-subtitle text-sucess">Preço:</h6>
+        </div>
+        <div *ngIf="historico === 'nao'" class="card-footer text-muted d-grid gap-2">
+          <button  class="btn btn-outline-danger" type="button">
+            Remover da marcação
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

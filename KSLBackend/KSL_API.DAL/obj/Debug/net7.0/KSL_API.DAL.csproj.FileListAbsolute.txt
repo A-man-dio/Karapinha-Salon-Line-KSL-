@@ -49,3 +49,20 @@
 /Users/ernestoamandio/Desktop/KSLBackend/KSL_API.DAL/obj/Debug/net7.0/KSL_API.DAL.pdb
 /Users/ernestoamandio/Desktop/KSLBackend/KSL_API.DAL/obj/Debug/net7.0/KSL_API.DAL.genruntimeconfig.cache
 /Users/ernestoamandio/Desktop/KSLBackend/KSL_API.DAL/obj/Debug/net7.0/ref/KSL_API.DAL.dll
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/bin/Debug/net7.0/KSL_API.DAL.deps.json
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/bin/Debug/net7.0/KSL_API.DAL.runtimeconfig.json
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/bin/Debug/net7.0/KSL_API.DAL.dll
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/bin/Debug/net7.0/KSL_API.DAL.pdb
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/bin/Debug/net7.0/KSL_API.Model.dll
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/bin/Debug/net7.0/KSL_API.Model.pdb
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/obj/Debug/net7.0/KSL_API.DAL.csproj.AssemblyReference.cache
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/obj/Debug/net7.0/KSL_API.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/obj/Debug/net7.0/KSL_API.DAL.AssemblyInfoInputs.cache
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/obj/Debug/net7.0/KSL_API.DAL.AssemblyInfo.cs
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/obj/Debug/net7.0/KSL_API.DAL.csproj.CoreCompileInputs.cache
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/obj/Debug/net7.0/KSL_API.DAL.csproj.CopyComplete
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/obj/Debug/net7.0/KSL_API.DAL.dll
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/obj/Debug/net7.0/refint/KSL_API.DAL.dll
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/obj/Debug/net7.0/KSL_API.DAL.pdb
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/obj/Debug/net7.0/KSL_API.DAL.genruntimeconfig.cache
+/Users/ernestoamandio/Desktop/Projeto AW/KSLBackend/KSL_API.DAL/obj/Debug/net7.0/ref/KSL_API.DAL.dll

@@ -1,0 +1,51 @@
+<div class="my-container mx-auto border border-dark ">
+    <div class="p-4 my-rounded-corner border">
+        <h3 class="mx-auto text-center py-2">Serviços a serem marcados</h3>
+       
+        <div class="current-services-items w-75 mx-auto mt-5">
+            <h4>Selecionados</h4>
+            <div class="mt-4 row g-0">
+                <div class="col-6 py-3 px-2" *ngFor="let i of [1,1,1,1,1]">
+                    <app-produtos view="marcar"></app-produtos>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <div class="d-grid w-50 mx-auto mb-3 my-rounded-corner">
+                <button class="btn btn-outline-success fs-4 " type="button">
+                    Finalizar marcação
+                </button>
+            </div>
+            <table class="table w-50 mx-auto table-bordered table-hover my-shadow">
+                <tbody>
+                    <tr>
+                        <td>Quantidade de serviços</td>
+                        <td class="fs-5 fw-bold ">5</td>
+                    </tr>
+                    <tr>
+                        <td>Preço total</td>
+                        <td class="fs-5 fw-bold text danger">10000 Kz</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="mt-5 border p-4 my-rounded-corner">
+        <h3 class="w-25 border text-center py-2 mb-5 my-rounded-corner">Histórico de marcações</h3>
+        <div class="card mb-5" *ngFor="let cart of [1,1,1,1,1]">
+            <div class="justify-content-between card-header d-flex fw-bold align-items-center">
+                <span class="estado"> Estado: <span class="fs-5">Concluído</span>   </span>
+                <span class="servicos"> Data do serviço: <span class="fs-5">24/7/2024</span>   </span>
+                <span class="preco">Preço total: <span class="fs-5">10000 Kz</span>   </span>
+            </div>
+            <div class="cart-body px-4 py-2">
+                <div class="row g-0 align-items-center justify-content-center">
+                    <div class="col-2 px-2 y-2  " *ngFor="let i of [1,1,1,1,1]">
+                        <app-produtos historico="sim" view="marcar"></app-produtos>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

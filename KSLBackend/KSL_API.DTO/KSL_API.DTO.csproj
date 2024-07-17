@@ -8,9 +8,7 @@
 
     <ItemGroup>
       <Compile Remove="Mappers\**" />
-      <Compile Include="Categoria\CreateCategoriaDTO.cs" />
-      <Compile Include="Marcacao\CreateMarcacaoDTO.cs" />
-      <Compile Include="Profissional\CreateProfissionalDTO.cs" />
+      
     </ItemGroup>
 
     <ItemGroup>
@@ -19,6 +17,16 @@
 
     <ItemGroup>
       <None Remove="Mappers\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\KSL_API.Model\KSL_API.Model.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.20" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     </ItemGroup>
 
 </Project>

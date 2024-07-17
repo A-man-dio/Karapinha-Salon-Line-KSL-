@@ -1,0 +1,52 @@
+<div class="my-container mx-auto border border-dark">
+  <!--toolbar-->
+  <div class="border mb-5 p-3 d-flex justify-content-around ">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn-outline-secondary btn" 
+        [ngClass]="{'active': view ==='grid'}"
+        (click)="view = 'grid'" >Grelha</button>
+      <button type="button" class="btn-outline-secondary btn"
+      [ngClass]="{'active': view ==='list'}"
+      (click)="view = 'list'">Lista</button>
+    </div>
+
+    <div class="w-50 d-flex">
+      <span class="me-5 d-flex align-items-center fs-5 fw-bold">Ordenar por</span>
+
+      <div class="btn-group" role="group">
+        <button type="button" class="btn-outline-secondary btn"
+        [ngClass]="{'active': ordenar ==='padrao'}"
+        (click)="ordenar = 'padrao' ">Padrão</button>
+        <button type="button" class="btn-outline-secondary btn"
+        [ngClass]="{'active': ordenar ==='htl'}"
+        (click)="ordenar = 'htl'">Preço (Maior para o menor)</button>
+        <button type="button" class="btn-outline-secondary btn"
+        [ngClass]="{'active': ordenar ==='lth'}"
+        (click)="ordenar = 'lth'">Preço (Menor para o maior)</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="border p-5">
+
+      <!--grid-->
+      <div class="grid-view" *ngIf="view === 'grid'">
+        <div class="row g-5">
+            <div class="col-3" *ngFor="let produtos of [1,1,1,1,1]">
+                <app-produtos></app-produtos>
+            </div>
+        </div>
+      </div>
+
+      <!--list-->
+      <div class="list-view" *ngIf="view === 'list'">
+        <div class="row mb-5"*ngFor="let produtos of [1,1,1,1,1]">
+            <div class="col" >
+                <app-produtos [view] ="'list'"></app-produtos>
+            </div>
+        </div>
+      </div>
+
+  </div>
+
+</div>
